@@ -36,6 +36,7 @@
   "devDependencies": {
     "@faker-js/faker": "^8.0.0",
     "avatar-generator": "2.0.4",
+    "dotenv": "16.3.1",
     "omgopass": "3.2.1",
     "vitest": "0.34.6"
   },

@@ -2,23 +2,23 @@ const path = require("path");
 const fs = require("fs-extra");
 const logger = require("./logger");
 
+try {
+  require("dotenv").config();
+} catch (err) {
+  console.warn("dotenv not found, skipping .env file loading");
+}
+
 const config = () => {
   // read logchimp.config.json from file-system
   const configPath = path.resolve(__dirname, "../../../logchimp.config.json");
   const isConfigExists = fs.existsSync(configPath);
 
   if (isConfigExists) {
-    const config = fs.readJsonSync(
-      path.resolve(__dirname, "../../../logchimp.config.json"),
-    );
-
+    const config = fs.readJsonSync(configPath);
     return config;
   }
-
   // read environment variables
   const logchimpEnv = process.env.LOGCHIMP;
-  // LOGCHIMP_THEME_STANDALONE is in BETA
-  const themeStandalone = process.env.LOGCHIMP_THEME_STANDALONE;
   const serverPort = process.env.LOGCHIMP_SERVER_PORT || process.env.PORT;
   const serverSecretKey = process.env.LOGCHIMP_SECRET_KEY;
   const databaseHost = process.env.LOGCHIMP_DB_HOST;
@@ -35,9 +35,6 @@ const config = () => {
 
   if (logchimpEnv === "1") {
     return {
-      theme: {
-        standalone: themeStandalone === "true" ? true : false,
-      },
       server: {
         port: serverPort,
         secretKey: serverSecretKey,
@@ -61,6 +58,7 @@ const config = () => {
   }
 
   logger.info("LogChimp configuration missing");
+  return null;
 };
 
 module.exports = config;
