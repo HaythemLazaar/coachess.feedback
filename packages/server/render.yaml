@@ -1,2 +1,10 @@
-buildCommand: pnpm install
-startCommand: pnpm start
+services:
+  # Node web service
+  - type: web
+    name: coachess.feedback
+    env: node
+    branch: v0.6.1
+    numInstances: 1
+    buildCommand: yarn install
+    startCommand: yarn start
+    autoDeploy: false
