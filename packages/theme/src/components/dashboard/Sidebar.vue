@@ -1,7 +1,12 @@
 <template>
   <div class="sidebar">
     <header>
-      <site-branding :title="siteSettings.title" :logo="siteSettings.logo" :dashboard="true" text-color="white" />
+      <site-branding
+        :title="siteSettings.title"
+        :logo="siteSettings.logo"
+        :dashboard="true"
+        text-color="white"
+      />
     </header>
     <div class="sidebar-list">
       <h6>Manage</h6>
@@ -88,7 +93,7 @@
               <template #icon>
                 <twitter-icon />
               </template>
-              Tweet @LogChimp!
+              Tweet @coachess.feedback!
             </dropdown-item>
             <dropdown-spacer />
             <dropdown-item @click="logout">
@@ -101,11 +106,11 @@
         </template>
         <template #toggle>
           <auth-user
-						:name="user.name"
-						:email="user.email"
-						:username="user.username"
-						:avatar="user.avatar"
-					/>
+            :name="user.name"
+            :email="user.email"
+            :username="user.username"
+            :avatar="user.avatar"
+          />
         </template>
       </dropdown-wrapper>
     </footer>
@@ -126,11 +131,11 @@ import {
   CreditCard as CreditCardIcon,
   Info as InfoIcon,
   Twitter as TwitterIcon,
-  LogOut as LogoutIcon
+  LogOut as LogoutIcon,
 } from "lucide-vue";
 
-import { useSettingStore } from "../../store/settings"
-import { useUserStore } from "../../store/user"
+import { useSettingStore } from "../../store/settings";
+import { useUserStore } from "../../store/user";
 
 // components
 import SiteBranding from "../site/SiteBranding.vue";
@@ -143,21 +148,21 @@ import DropdownSpacer from "../ui/dropdown/DropdownSpacer.vue";
 // icons
 import RoadmapIcon from "../../components/icons/Roadmap.vue";
 
-const { get: siteSettings } = useSettingStore()
-const { user, logout } = useUserStore()
+const { get: siteSettings } = useSettingStore();
+const { user, logout } = useUserStore();
 
 function aboutLogChimp() {
-	window.open("https://logchimp.codecarrot.net/");
+  window.open("https://logchimp.codecarrot.net/");
 }
 
 function tweetLogChimp() {
-	window.open(
-		"https://twitter.com/intent/tweet?text=%40LogChimp+Hi%21+Can+you+help+me+with+&related=LogChimp"
-	);
+  window.open(
+    "https://twitter.com/intent/tweet?text=%40LogChimp+Hi%21+Can+you+help+me+with+&related=LogChimp"
+  );
 }
 </script>
 
-<style lang='sass'>
+<style lang="sass">
 $white: var(--color-white)
 
 .sidebar

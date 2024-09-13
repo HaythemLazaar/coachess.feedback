@@ -38,18 +38,18 @@
     <img src="https://img.shields.io/badge/Help%20Wanted-Contribute-blue" alt="Help Wanted Contribute" />
   </a>
   <a href="https://twitter.com/logchimp">
-    <img src="https://img.shields.io/twitter/follow/logchimp?style=flat" alt="Follow @logchimp on Twitter">
+    <img src="https://img.shields.io/twitter/follow/logchimp?style=flat" alt="Follow @coachess.feedback on Twitter">
   </a>
 </p>
 
 ## Features
 
-* 🎨 Brand customizable
-* 📝 Create posts
-* 🗃️ Organise posts by Boards & Roadmaps
-* 💪 Powerful dashboard
-* 🔐 Secure by design
-* 🤖 Self-hosted
+- 🎨 Brand customizable
+- 📝 Create posts
+- 🗃️ Organise posts by Boards & Roadmaps
+- 💪 Powerful dashboard
+- 🔐 Secure by design
+- 🤖 Self-hosted
 
 ## Getting started
 
@@ -59,7 +59,7 @@ To get started you can read our [deployment docs](https://logchimp.codecarrot.ne
 
 Stay up to date on the development of LogChimp you can star this repository, follow us on Twitter or reach out to the community with these helpful resources.
 
-- Follow [@logchimp](https://twitter.com/@logchimp) on Twitter.
+- Follow [@coachess.feedback](https://twitter.com/@coachess.feedback) on Twitter.
 - Join the official [LogChimp Discord](https://discord.gg/A7mztcC)
 
 ## ⛏️ Built Using

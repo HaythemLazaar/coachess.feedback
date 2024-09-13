@@ -1,0 +1,71 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Hayto\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js install
+
+PATH: 
+  C:\Program Files\Microsoft\jdk-17.0.11.9-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\app\Haythem\product\11.2.0\dbhome_2\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\Users\Hayto\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\opt\apache-maven-3.8.6\bin;C:\Program Files\Java\jre1.8.0_291\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\dotnet\;C:\Users\Hayto\AppData\Local\Programs\Python\Python311\;C:\Users\Hayto\AppData\Local\Programs\Python\Python311\Scripts\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\Hayto\AppData\Local\Android\Sdk\emulator;C:\Users\Hayto\AppData\Local\Android\Sdk\platform-tools;;C:\Program Files\Docker\Docker\resources\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;c:\Users\Hayto\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\Hayto\AppData\Local\pnpm;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Ruby30-x64\bin;C:\Users\Hayto\AppData\Local\Microsoft\WindowsApps;C:\Users\Hayto\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Hayto\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\opt\apache-maven-3.8.6\bin;C:\Program Files\MongoDB\Server\4.0\bin;C:\Users\Hayto\.dotnet\tools;C:\Program Files\heroku\bin;C:\Users\Hayto\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\Hayto\AppData\Local\Programs\Python\Python311\;C:\Users\Hayto\AppData\Roaming\npm;C:\xampp\php;C:\Users\Hayto\composer;C:\Users\Hayto\AppData\Roaming\Composer\vendor\bin;C:\Strawberry\c\bin;C:\Strawberry\perl\site\bin;C:\Strawberry\perl\bin;C:\Users\Hayto\AppData\Local\Programs\MiKTeX\miktex\bin\x64\
+
+Yarn version: 
+  1.22.10
+
+Node version: 
+  20.9.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@coachess.feedback%2fapi: Not found
+      at params.callback [as _callback] (C:\Users\Hayto\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:66988:18)
+      at self.callback (C:\Users\Hayto\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:140662:22)
+      at Request.emit (node:events:514:28)
+      at Request.<anonymous> (C:\Users\Hayto\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141634:10)
+      at Request.emit (node:events:514:28)
+      at IncomingMessage.<anonymous> (C:\Users\Hayto\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:141556:12)
+      at Object.onceWrapper (node:events:628:28)
+      at IncomingMessage.emit (node:events:526:35)
+      at endReadableNT (node:internal/streams/readable:1408:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+
+npm manifest: 
+  {
+    "name": "logchimp",
+    "description": "A open-source software to track your customers feedback",
+    "version": "0.7.0-beta.3",
+    "private": true,
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/logchimp/logchimp.git"
+    },
+    "bugs": {
+      "url": "https://github.com/logchimp/logchimp/issues"
+    },
+    "scripts": {
+      "server:dev": "pnpm --filter @coachess.feedback/api dev",
+      "server:start": "pnpm --filter @coachess.feedback/api start",
+      "build:theme": "pnpm --filter @coachess.feedback/theme build",
+      "biome:format": "biome format --write ."
+    },
+    "dependencies": {
+      "@coachess.feedback/api": "0.7.0-beta.3",
+      "dotenv": "16.3.1"
+    },
+    "devDependencies": {
+      "nodemon": "3.0.2",
+      "@biomejs/biome": "1.4.1"
+    },
+    "keywords": [
+      "logchimp",
+      "feedback",
+      "open-source",
+      "codecarrot"
+    ],
+    "engines": {
+      "node": "20.x"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

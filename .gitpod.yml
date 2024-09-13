@@ -6,13 +6,13 @@ tasks:
     init: |
       # Install packages
       pnpm Install
-      bash ./scripts/gitpod-init.sh 
+      bash ./scripts/gitpod-init.sh
       gp sync-done setup
   - name: Server
     openMode: tab-after
     command: |
       gp sync-await setup
-      pnpm --filter @logchimp/api dev
+      pnpm --filter @coachess.feedback/api dev
   - name: Server (logs)
     openMode: tab-after
     command: |
@@ -30,7 +30,7 @@ tasks:
       # export 'APP_SERVER_URL' ENV to file
       echo APP_SERVER_URL=http://localhost:3000 > .env
 
-      pnpm --filter @logchimp/theme dev
+      pnpm --filter @coachess.feedback/theme dev
 
 ports:
   - port: 8080
