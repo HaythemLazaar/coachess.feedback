@@ -3,7 +3,6 @@ services:
   - type: web
     name: coachess.feedback
     env: node
-    rootdir: packages/server
     branch: v0.6.1
     numInstances: 1
     buildCommand: yarn install
