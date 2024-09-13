@@ -1,5 +1,5 @@
 {
-  "name": "@logchimp/api",
+  "name": "@coachess.feedback/api",
   "description": "LogChimp APIs",
   "version": "0.7.0-beta.3",
   "main": "./index.js",
@@ -14,7 +14,7 @@
     "db:seed:run": "knex --knexfile ./database/config.js seed:run"
   },
   "dependencies": {
-    "@logchimp/api": "file:",
+    "@coachess.feedback/api": "file:",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "express": "^4.17.1",
@@ -40,7 +40,6 @@
     "vitest": "0.34.6"
   },
   "engines": {
-    "node": ">=16 < 17",
-    "pnpm": "7.33.6"
+    "node": "20.x"
   }
 }
